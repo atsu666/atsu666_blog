@@ -1,0 +1,39 @@
+<!-- Thumbnails -->
+<!-- BEGIN_MODULE Entry_Summary id="summary" -->
+<!-- BEGIN notFound -->
+<div data-alert class="alert-box warning radius">
+	Not Found Entry.
+</div><!-- END notFound -->
+
+<div id="fontScopePage%{PAGE}">
+<div class="row"><!-- BEGIN unit:loop --><!-- BEGIN entry:loop -->
+	<div class="large-6 medium-6 small-12 columns left js-biggerlink-disable">
+		<div class="thumbnailsBox"><!-- BEGIN image:veil -->
+			<img src="%{ROOT_DIR}{path}" ><!-- END image:veil --><!-- BEGIN noimage -->
+			<img src="http://placehold.it/1000x1000&text=Thumbnail" ><!-- END noimage -->
+		</div>
+
+		<div class="panel summaryTitle">
+			<p><small>{date#F} {date#d} {date#D} {date#Y}</small></p>
+			<h4><a href="{url}">{title}[trim(80, '...')]</a></h4><!-- BEGIN tag:loop -->
+			<a href="{url}"><span class="label round">{name}</span></a><!-- END tag:loop -->
+			<!-- <p class="subheader">{summary}[trim(81, '...')]</p> -->
+		</div>
+	</div><!-- END entry:loop --><!-- END unit:loop -->
+</div>
+</div> <!-- div#fontScopePage -->
+
+<!-- BEGIN forwardLink --><!-- BEGIN_IF [{forwardPage}/nem/] -->
+<form action="" method="post" class="js-post_include-bottom" onreset="includeCallback({forwardPage});" >
+	<div class="small-centered js-acms_loader" style="margin:20px auto;"></div>
+	<input type="hidden" name="keyword" value="%{KEYWORD}" />
+	<input type="hidden" name="tag" value="%{TAG}" />
+	<input type="hidden" name="bid" value="%{BID}" />
+	<input type="hidden" name="cid" value="%{CID}" />
+	<input type="hidden" name="page" value="{forwardPage}" />
+	<input type="hidden" name="tpl" value="/include/mainTop.html" />
+	<input type="hidden" name="ACMS_POST_2GET" value="続きを読み込む" class="button expand" />
+</form><!-- END_IF --><!-- END forwardLink -->
+
+<!-- End Thumbnails -->
+<!-- END_MODULE Entry_Summary -->

@@ -1,0 +1,92 @@
+<!-- BEGIN_MODULE Entry_Body -->
+<!-- BEGIN notFound -->
+<section role="content">
+	<h2 class="notFoundTitle">Not found</h2>
+</section><!-- END notFound -->
+
+<!-- 1記事▼▼ -->
+<!-- BEGIN entry:loop -->
+<!--#include file="/admin/entry/revision-info.html"-->
+<article class="acms-entry">
+	<div class="acms-inner">
+		<!--#include file="/admin/entry/title.html"-->
+
+		<!-- BEGIN title:veil -->
+		<header class="clearfix">
+			<h3><a href="{titleUrl}">{title}[raw]</a></h3>
+			<h6>
+				{date#F} {date#d} {date#D} {date#Y}
+				<!-- BEGIN category:veil -->|<!-- BEGIN category:loop -->
+				<a href="{url}">{name}</a><!-- BEGIN glue -->&lt;<!-- END glue --><!-- END category:loop --><!-- END category:veil -->
+			</h6>
+		</header>
+		<!-- END title:veil -->
+
+		<section class="acms-grid-r">
+			<!-- BEGIN unit:veil -->
+			<!--#include file="/include/unit.html"-->
+			<hr class="clearHidden" />
+			
+			<!-- END unit:veil -->
+			<!-- BEGIN continueLink:veil -->
+			<p class="continueLink clear"><a href="{continueUrl}">「{continueName}」の続きを読む</a></p>
+			<!-- END continueLink:veil -->
+
+			<!-- BEGIN formBody -->
+			<!--#include file="/include/form/unit.html"-->
+			<hr class="clearHidden" />
+			<!-- END formBody -->
+
+			<!-- BEGIN adminEntryEdit -->
+			<!--#include file="/admin/entry/edit.html"-->
+			<!--#include file="/admin/entry/add.html"-->
+			<!-- END adminEntryEdit -->
+
+			<!-- BEGIN adminFormEdit -->
+			<!--#include file="/admin/form2/edit.html"-->
+			<!-- END adminFormEdit -->
+
+			<!-- BEGIN tag:veil -->
+			<p> tag :<!-- BEGIN tag:loop -->
+				<a href="{url}"><span class="label round">{name}<span></a><!-- END tag:loop -->
+			</p><!-- END tag:veil -->
+			<!--#include file="/admin/entry/action.html"-->
+		</section>
+	</div>
+</article>
+
+<!-- BEGIN_MODULE Touch_Entry -->
+<!-- コメントのインクルード -->
+<!--#include file="/include/comment.html"-->
+<!-- END_MODULE Touch_Entry -->
+
+<!-- END entry:loop -->
+<!-- 1記事▲▲ -->
+
+<!-- BEGIN pager:veil -->
+<nav class="pagination-centered">
+	<ul class="pagination"><!-- BEGIN forwardLink -->
+		<li class="arrow unavailable"><a href="{url}">&laquo;</a></li><!-- END forwardLink --><!-- BEGIN firstPage:veil -->
+		<li><a href="{firstPageUrl}">{firstPage}</a></li>
+		<li class="unavailable"><a href="">&hellip;</a></li><!-- END firstPage:veil --><!-- BEGIN page:loop -->
+		<li{pageCurAttr}[raw]><a href="<!-- BEGIN link#front -->{url}<!-- END link#front -->">{page}</a></li><!-- END page:loop --><!-- BEGIN lastPage:veil -->
+		<li class="unavailable"><a href="">&hellip;</a></li>
+		<li><a href="{lastPageUrl}">{lastPage}</a></li><!-- END lastPage:veil --><!-- BEGIN backLink -->
+		<li class="arrow"><a href="{url}">&raquo;</a></li><!-- END backLink -->
+	</ul>
+</nav><!-- END pager:veil -->
+
+<!-- BEGIN serialNavi:veil -->
+<nav>
+	<ul class="inline-list"><!-- BEGIN prevLink -->
+		<li><a href="{url}">&lt;&lt;&nbsp;{name}[trim(27, '...')|escape]</a></li><!-- END prevLink -->
+		<li><a href="{upperUrl}">一覧へ</a></li><!-- BEGIN nextLink -->
+		<li><a href="{url}">{name}[trim(27, '...')|escape]&nbsp;&gt;&gt;</a></li><!-- END nextLink -->
+	</ul>
+</nav>
+<!-- END serialNavi:veil -->
+<!-- END_MODULE Entry_Body -->
+
+<footer>
+	<!--#include file="/include/snsButton.html"-->
+</footer>

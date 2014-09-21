@@ -1,0 +1,24 @@
+pre {
+  padding: 10px;
+  background-color: #FAFAFA;
+  border: solid 1px #DFDFDF;
+  border-radius: 5px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+code {
+  padding: 5px;
+  background-color: #FAFAFA;
+  border: solid 1px #DFDFDF;
+  border-radius: 5px;
+  color: #F92D74;
+}
+pre,
+code,
+kbd,
+pre,
+samp {
+  font-family: Consolas,monospace,serif;
+  font-size: 10 px;
+  font-size: 1rem;
+}

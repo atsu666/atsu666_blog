@@ -1,0 +1,52 @@
+<aside class="large-12 columns">
+	<form action="" method="post" name="searchForm">
+		<div class="row collapse">
+			<div class="small-10 columns">
+				<input type="text" name="keyword" value="%{KEYWORD}" placeholder="search"/>
+				<input type="text" name="iebug" value="" style="display:none;" class="iebug" />
+				<input type="hidden" name="bid" value="%{BID}" />
+				<input type="hidden" name="ACMS_POST_2GET" value="search" />
+			</div>
+			<div class="small-2 columns">
+				<input type="submit" name="ACMS_POST_2GET" class="button postfix" value="Go" />
+				<!-- <a href="#" class="button postfix" onclick="document.searchForm.submit();">Go</a> -->
+			</div>
+		</div>
+	</form>
+</aside>
+
+<!-- BEGIN_MODULE Entry_List -->
+<aside class="large-12 columns">
+	<h5>Recently</h5>
+	<ul class="side-nav"><!-- BEGIN entry:loop -->
+		<li>
+			<a href="{url}">{title}</a></li>
+		<li><!-- END entry:loop -->
+	</ul>
+</aside><!-- END_MODULE Entry_List -->
+
+<!-- BEGIN_MODULE Category_List -->
+<aside class="large-12 medium-6 columns">
+	<h5>Categories</h5><!-- BEGIN category:loop --><!-- BEGIN ul#front -->
+	<ul class="side-nav"><!-- END ul#front --><!-- BEGIN li#front -->
+		<li><!-- END li#front --><!-- BEGIN category:veil -->
+			<a href="{url}">{name}</a></li><!-- BEGIN amount:veil --><!-- END amount:veil --><!-- END category:veil --><!-- BEGIN li#rear -->
+		<li><!-- END li#rear --><!-- BEGIN ul#rear -->
+	</ul><!-- END ul#rear --><!-- END category:loop -->
+
+	<!-- <div class="panel">
+		<h5>Featured</h5>
+		<p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow.</p>
+		<a href="#">Read More →</a>
+	</div> -->
+</aside><!-- END_MODULE Category_List -->
+
+<!-- BEGIN_MODULE Tag_Cloud -->
+<aside class="large-12 medium-6 columns">
+	<h5>Tags</h5>
+	<ul class="inline-list"><!-- BEGIN tag:loop -->
+		<li>
+			<a class="tagSize{level}" href="{url}" title="{amount}件">{name}</a></li><!-- END tag:loop -->
+		<li>
+	</ul>
+</aside><!-- END_MODULE Tag_Cloud -->

@@ -1,0 +1,235 @@
+.acms-table {
+  width: 100%;
+  max-width: 100%;
+  border-top: 1px solid #AAAAAA;
+}
+.acms-table th,
+.acms-table td {
+  padding: 10px;
+  border-bottom: 1px solid #AAAAAA;
+}
+.acms-table th {
+  vertical-align: top;
+  text-align: left;
+}
+.acms-table.acms-table-none {
+  border-top: 0;
+}
+.acms-table.acms-table-none tr {
+  border-bottom: 0;
+}
+.acms-table,
+.acms-table:before,
+.acms-table:after,
+.acms-table-admin-edit,
+.acms-table-admin-edit th,
+.acms-table-admin-edit td,
+.acms-table-heading,
+.acms-table-heading th,
+.acms-table-heading td,
+.acms-admin-mini-table,
+.acms-admin-mini-table tr,
+.acms-admin-mini-table th,
+.acms-admin-mini-table td {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.acms-table-heading {
+  border-top: 1px solid #CCCCCC;
+}
+.acms-table-heading th,
+.acms-table-heading td {
+  border-bottom: 1px solid #CCCCCC;
+}
+.acms-table-heading th {
+  padding: 5px 10px;
+  border-top: solid 1px #808086;
+  background-color: #414149;
+  color: #FFFFFF;
+  font-weight: normal;
+}
+.acms-table-bordered {
+  border-top: 1px solid #DDD;
+  border-left: 1px solid #DDD;
+}
+.acms-table-bordered th,
+.acms-table-bordered td {
+  border-bottom: 1px solid #DDD;
+  border-right: 1px solid #DDD;
+}
+.acms-table-striped tr:nth-of-type(odd),
+.acms-table-striped tr.odd {
+  background: #FFF;
+}
+.acms-table-striped tr:nth-of-type(even),
+.acms-table-striped tr.even {
+  background: #EEE;
+}
+.acms-table-hover td {
+  background: #F2F2F4;
+}
+.acms-table-hover tr:hover td {
+  background: #edf2f9;
+  -webkit-transition: background-color 0.1s linear;
+  -moz-transition: background-color 0.1s linear;
+  cursor: pointer;
+}
+.acms-table-hover2 tr:hover {
+  background: #EEEEEE;
+}
+.acms-table-edit {
+  border-top: none;
+}
+.acms-table-edit th,
+.acms-table-edit td {
+  vertical-align: middle;
+}
+.acms-table-edit th {
+  text-align: right;
+}
+.acms-table-sortable-active th,
+.acms-table-sortable-active td,
+.acms-table-sortable-active tr:nth-of-type(even) th,
+.acms-table-sortable-active tr:nth-of-type(even) td,
+.acms-table-sortable-active tr.even th,
+.acms-table-sortable-active tr.even td {
+  background-color: #FFFFFF;
+}
+@media (max-width: 768px) {
+  .acms-table-responsive {
+    margin-bottom: 15px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    border: 1px solid #dddddd;
+  }
+  .acms-table-entry th,
+  .acms-table-entry td {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .acms-table-entry th {
+    padding-bottom: 0;
+    text-align: left;
+  }
+  .acms-table-entry td {
+    padding-top: 3px;
+  }
+  .acms-table-entry .detail-fade-body th,
+  .acms-table-entry .detail-fade-body td {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.acms-table-admin {
+  width: 100%;
+  border-top: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-left: 1px solid #cccccc;
+}
+.acms-table-admin thead {
+  border: none;
+}
+.acms-table-admin thead th {
+  padding: 5px;
+  font-size: 13 px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.acms-table-admin th,
+.acms-table-admin td {
+  padding: 13px 10px;
+  border-bottom: 1px solid #cccccc;
+  line-height: 1;
+}
+.acms-table-admin th {
+  text-align: left;
+}
+.acms-table-admin-striped tr:nth-of-type(even),
+.acms-table-admin-striped tr.even {
+  background: #F2F2F4;
+}
+.acms-table-admin-striped tr:nth-of-type(odd),
+.acms-table-admin-striped tr.odd {
+  background: #FFFFFF;
+}
+.acms-table-admin-edit {
+  width: 100%;
+  border-top: 1px solid #cccccc;
+  background: #F2F2F4;
+}
+.acms-table-admin-edit tr {
+  border-right: 1px solid #cccccc;
+  border-bottom: none;
+  border-left: 1px solid #cccccc;
+}
+.acms-table-admin-edit th {
+  width: 270px;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.acms-table-admin-edit td,
+.acms-table-admin-edit th {
+  padding: 5px 10px;
+}
+.acms-table-admin-edit tr:first-child td,
+.acms-table-admin-edit tr:first-child th {
+  padding: 20px 10px 5px;
+}
+.acms-table-admin-edit tr:last-child td,
+.acms-table-admin-edit tr:last-child th {
+  padding: 5px 10px 20px;
+  border-bottom: 1px solid #CCC;
+}
+@media screen and (max-width: 768px) {
+  .acms-table-admin-edit tbody th {
+    padding-top: 5px;
+  }
+  .acms-table-admin-edit tr:first-child th {
+    padding: 10px 10px 5px;
+  }
+  .acms-table-admin-edit tr:first-child td {
+    padding: 5px 10px 15px;
+  }
+  .acms-table-admin-edit tr:last-child th {
+    padding: 10px 10px 5px;
+  }
+  .acms-table-admin-edit tr:last-child td {
+    padding: 5px 10px 15px;
+  }
+}
+.acms-admin-mini-table {
+  width: 100%;
+  margin: 10px 0 0 0;
+}
+.acms-admin-mini-table thead {
+  background: #FFF;
+  border-bottom: 2px solid #cccccc;
+}
+.acms-admin-mini-table tr,
+.acms-admin-mini-table td,
+.acms-admin-mini-table th {
+  padding: 7px 10px;
+}
+.acms-admin-mini-table tbody tr:nth-of-type(odd) {
+  background: #F7F7F8;
+}
+.acms-admin-mini-table tbody tr:nth-of-type(even) {
+  background: #FFF;
+}
+.acms-table-admin-edit .acms-table-center,
+.acms-table-admin .acms-table-center,
+.acms-table-center {
+  text-align: center;
+}
+.acms-table-admin-edit .acms-table-left,
+.acms-table-admin .acms-table-left,
+.acms-table-left {
+  text-align: left;
+}

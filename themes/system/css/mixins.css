@@ -1,0 +1,32 @@
+a {
+  text-decoration: none;
+}
+.clearHidden {
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  margin: 0;
+  border: none;
+}
+.clearfix:after {
+  clear: both;
+  display: block;
+  visibility: hidden;
+  height: 0;
+  content: ".";
+}
+.clearfix {
+  _display: inline-table;
+  zoom: 1;
+}
+.acms-bg-black {
+  background-color: #111111;
+}
+.acms-bg-gray {
+  background-color: #232323;
+}
+.acms-bg-black a,
+.acms-bg-gray a {
+  color: #cccccc;
+}

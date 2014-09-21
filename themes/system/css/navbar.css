@@ -1,0 +1,38 @@
+.acms-navbar {
+  height: 30px;
+  padding: 0 20px;
+  _display: inline-table;
+  zoom: 1;
+}
+.acms-navbar:before,
+.acms-navbar:after {
+  content: " ";
+  display: table;
+}
+.acms-navbar:after {
+  clear: both;
+}
+/* ナビゲーションリンク */
+.acms-navbar-nav {
+  float: left;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.acms-navbar-nav > li {
+  float: left;
+  margin-left: 20px;
+  list-style: none;
+}
+.acms-navbar-nav > li a {
+  display: inline-block;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  line-height: 1.2;
+}
+.acms-navbar-nav > li .acms-btn {
+  padding: 8px 10px;
+}
+/* 右寄せ */
+.acms-navbar-right {
+  float: right;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!--#include file="/include/head/meta.html" -->
+<!--#include file="/include/head/link.html" -->
+<!--#include file="/include/head/js.html" -->
+</head>
+
+<body>
+<!-- Nav Bar -->
+<!-- Title -->
+<div class="row">
+	<div class="large-12 columns">
+		<h1><a href="%{BASE_URL}" style="color:#222;">%{BLOG_NAME}</a> <small>atsu666</small></h1>
+		<hr />
+	</div>
+</div>
+
+<div class="row">
+	<div class="large-12 columns">
+<!-- Admin Menu -->
+<!--#include file="/admin/action.html"-->
+	</div>
+</div>
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+	<div class="large-9 columns">
+	<!-- Main Blog Content -->
+	<!--#include file="/include/mainTop.html"-->
+	</div>
+	<div class="large-3 columns">
+	<!-- Sidebar -->
+	<!--#include file="/include/sidebar.html"-->
+	</div>
+</div>
+<!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+	<div class="large-12 columns">
+		<hr />
+		<p>Copyright %{Y} atsushi ito.</p>
+	</div>
+</footer>
+ 
+<script type="text/javascript">
+// document.body.onload = function() {
+//     // Ensure that the user can receive Safari Push Notifications.
+//     if ( 'safari' in window && 'pushNotification' in window.safari ) {
+//         var permissionData = window.safari.pushNotification.permission('web.com.atsu666');
+//         checkRemotePermission(permissionData);
+//     }
+// /*     do_push(); */
+// };
+ 
+// var checkRemotePermission = function ( permissionData ) {
+//     console.log(permissionData);
+//     if ( permissionData.permission === 'default' ) {
+//         console.log('default');
+//         // This is a new web service URL and its validity is unknown.
+//         window.safari.pushNotification.requestPermission(
+//             'https://www.appleple.com', // The web service URL.
+//             'web.com.atsu666',     // The Website Push ID.
+//             {'user_id' : 'abc'}, // Data that you choose to send to your server to help you identify the user.
+//             function ( c ) { // callback function
+//                 if ( c.permission === 'granted' ) {
+//                     console.log('granted callback.');
+//                 } else if ( c.permission === 'denied' ) {
+//                     console.log('denied callback.');
+//                 }
+//             }
+//         );
+//     } else if ( permissionData.permission === 'denied' ) {
+//         // The user said no.
+//         console.log('denied');
+//     } else if ( permissionData.permission === 'granted' ) {
+//         // The web service URL is a valid push provider, and the user said yes.
+//         // permissionData.deviceToken is now available to use.
+//         console.log('granted');
+//     }
+// };
+
+// function do_push() {
+//     $.post("https://atsu666.com/v1/pushPackages/web.com.atsu666", function(res){
+//         console.log(res);
+//     });
+// }
+</script>
+
+</body>
+</html>

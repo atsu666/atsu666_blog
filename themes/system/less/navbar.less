@@ -1,0 +1,37 @@
+// --------------- 
+// navbar ナビバー
+// ---------------
+.acms-navbar{
+	_display: inline-table;
+	height: 30px;
+	padding: 0 20px;
+	zoom: 1;
+	.clearfix();
+}
+
+/* ナビゲーションリンク */
+.acms-navbar-nav{
+	float: left;
+	margin: 0;
+	padding-left: 0;
+	> li{
+		float: left;
+		margin-left: 20px;
+		list-style: none;
+		a{
+			display: inline-block;
+			padding-top: 6px;
+			padding-bottom: 6px;
+			line-height: 1.2;
+		}
+		// ナビゲーションリンク ボタンは回避
+		.acms-btn{
+			padding: 8px 10px;
+		}
+	}
+}
+
+/* 右寄せ */
+.acms-navbar-right{
+	float: right;
+}

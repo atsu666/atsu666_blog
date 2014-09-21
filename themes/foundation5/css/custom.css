@@ -1,0 +1,209 @@
+@charset "utf-8";
+
+h1,h2,h3,h4,h5 {
+	line-height: 1.3em !important;
+	font-family: "NUDモトヤアポロ Std W4";
+	/*font-family: "FOT-ニューシネマA Std D";*/
+	/*font-family: "FOT-コミックミステリ Std DB";*/
+	/*font-family: "FOT-マティスえれがんと Pro DB";*/
+	/*font-family: "FOT-Popフューリ Std B";*/
+	/*font-family: "FOT-ロダンひまわり Pro M";*/
+	/*font-family: "FOT-ロダンマリア Pro B";*/
+	/*font-family: "FOT-ステッキ Std";*/
+	/*font-family: "FOT-筑紫A見出ミン Std E";*/
+	/*font-family: "FOT-筑紫ゴシック Pr5 R";*/
+	/*font-family: "FOT-スキップ Std L";*/
+}
+
+blockquote {
+	border-left: 3px solid #dddddd;
+}
+
+.thumbnailsBox {
+	height: 170px;
+	overflow: hidden;
+	border-top: 1px solid #d9d9d9;
+	border-left: 1px solid #d9d9d9;
+	border-right: 1px solid #d9d9d9;
+}
+.thumbnailsBox img{
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	margin: auto;
+}
+.snsButtons li {
+	text-align: center;
+}
+.summaryTitle{
+	padding: 0.6rem;
+	height: 180px;
+}
+.summaryTitle h4{
+	margin-top: 0;
+}
+.summaryTitle h4 a {
+	color: #4f4f4f;
+}
+.summaryTitle h4:before{
+	content: "";
+}
+.summaryTitle p {
+	margin-bottom: 0.5rem;
+	color: #8f8f8f;
+}
+.summaryTitle p small {
+	font-size: 90%;
+}
+.tagSize1 {
+	font-size: 0.8em;
+}
+.tagSize2 {
+	font-size: 0.85em;;
+}
+.tagSize3 {
+	font-size: 0.9em;
+}
+.tagSize4 {
+	font-size: 0.95em;
+}
+.tagSize5 {
+	font-size: 1.0em;
+}
+.tagSize6 {
+	font-size: 1.05em;
+}
+.tagSize7 {
+	font-size: 1.1em;
+}
+.tagSize8 {
+	font-size: 1.15em;
+}
+.tagSize9 {
+	font-size: 1.2em;
+}
+.tagSize10 {
+	font-size: 1.25em;
+	font-weight: bold;
+}
+.tagSize11 {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+.tagSize12 {
+	font-size: 1.35em;
+	font-weight: bold;
+}
+.tagSize13 {
+	font-size: 1.4em;
+	font-weight: bold;
+}
+.tagSize14 {
+	font-size: 1.45em;
+	font-weight: bold;
+}
+.tagSize15 {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+.tagSize16 {
+	font-size: 1.55em;
+	font-weight: bold;
+}
+.tagSize17 {
+	font-size: 1.6em;
+	font-weight: bold;
+}
+.tagSize18 {
+	font-size: 1.65em;
+	font-weight: bold;
+}
+.tagSize19 {
+	font-size: 1.7em;
+	font-weight: bold;
+}
+.tagSize20 {
+	font-size: 1.75em;
+	font-weight: bold;
+}
+.tagSize21 {
+	font-size: 1.8em;
+	font-weight: bold;
+}
+.tagSize22 {
+	font-size: 1.85em;
+	font-weight: bold;
+}
+.tagSize23 {
+	font-size: 1.9em;
+	font-weight: bold;
+}
+.tagSize24 {
+	font-size: 1.95em;
+	font-weight: bold;
+}
+.tagSize25 {
+	font-size: 2.0em;
+	font-weight: bold;
+}
+
+/* ローディング画像 */
+.js-acms_loader {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; 
+  border: 8px solid #008cba;
+  border-right-color: transparent;
+  animation: acmsspin 1s linear infinite;
+  -moz-animation: acmsspin 1s linear infinite;
+  -webkit-animation: acmsspin 1s linear infinite;
+}
+@keyframes acmsspin {
+  0% { transform: rotate(0deg);   opacity: 0.4; } /*0%の時は20％の透明度*/
+  50%  { transform: rotate(180deg); opacity: 1.0; } /*50%の時は透明度なし*/
+  100%   { transform: rotate(360deg); opacity: 0.4; } /*100%の時に20％の透明度に戻る*/
+}
+/* Firefox */
+@-moz-keyframes acmsspin{
+  0% { -moz-transform: rotate(0deg);   opacity: 0.4; } /*0%の時は20％の透明度*/
+  50%  { -moz-transform: rotate(180deg); opacity: 1.0; } /*50%の時は透明度なし*/
+  100%   { -moz-transform: rotate(360deg); opacity: 0.4; } /*100%の時に20％の透明度に戻る*/
+}
+/* Chrome, Safari */
+@-webkit-keyframes acmsspin{
+  0% { -webkit-transform: rotate(0deg);   opacity: 0.4; } /*0%の時は20％の透明度*/
+  50% { -webkit-transform: rotate(180deg); opacity: 1.0; } /*50%の時は透明度なし*/
+  100% { -webkit-transform: rotate(360deg); opacity: 0.4; } /*100%の時に20％の透明度に戻る*/
+}
+#js-entry_saving_progress {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 65536;
+  filter: alpha(opacity=66);
+  background-color: #ffffff;
+  background: rgba(255, 255, 255, 0.66);
+}
+#js-entry_saving_progress .js-acms_loader_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -18px;
+}
+#js-entry_saving_progress span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 30px;
+  margin-left: -57px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #111;
+}
+#js-entry_saving_progress span:before {
+  content: "保存しています...";
+}

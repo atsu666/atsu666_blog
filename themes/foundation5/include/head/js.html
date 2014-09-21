@@ -1,0 +1,31 @@
+<!--[if lte IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]--><!-- BEGIN_MODULE Js -->
+<script type="text/javascript" src="/index.js{arguments}" charset="UTF-8" id="acms-js"></script><!-- END_MODULE Js -->
+
+<!-- foundation5 -->
+<!-- <script src="/foundation-5.0.2/js/foundation.min.js"></script> -->
+
+<!-- Prism.js http://prismjs.com -->
+<script type="text/javascript" src="/js/prism.js"></script>
+
+<!-- FontPLUS https://webfont.fontplus.jp -->
+<script type="text/javascript" src="http://webfont.fontplus.jp/accessor/script/fontplus.js?FjE3TXufQOc%3D&aa=1" charset="utf-8"></script>
+
+<!-- a-blog cms config.js -->
+<script type="text/javascript">
+ACMS.Config.googleCodePrettifyClass = '';
+ACMS.Config.postIncludeEffect = 'fade';
+ACMS.Config.postIncludeOffset = 200;
+
+function includeCallback(page) {
+	var selector = '#fontScopePage'+page;
+	// FONTPLUS.targetSelector(selector);
+	FONTPLUS.reload();
+	FONTPLUS.attachCompleteEvent(function(){
+		// console.log('complete.');
+	});
+}
+</script>
+
+<!-- google analytics -->
+<!--BEGIN_MODULE Touch_Unlogin --><!-- BEGIN_MODULE Blog_Field -->{googleAnalytics}[raw]<!-- END_MODULE Blog_Field --><!-- END_MODULE Touch_Unlogin -->

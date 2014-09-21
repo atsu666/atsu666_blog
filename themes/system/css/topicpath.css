@@ -1,0 +1,29 @@
+.acms-topicpath {
+  list-style: none;
+  padding-left: 0;
+}
+@media screen and (max-width: 768px) {
+  .acms-topicpath.acms-float-right {
+    float: none;
+    padding-left: 10px;
+  }
+}
+.acms-topicpath li {
+  float: left;
+  margin-right: 5px;
+  color: #999999;
+}
+.acms-topicpath li + li:before {
+  content: "/";
+  margin-right: 5px;
+  color: #999999;
+}
+.acms-topicpath a {
+  color: #333333;
+}
+.acms-topicpath a:link {
+  text-decoration: none;
+}
+.acms-topicpath a:hover {
+  text-decoration: underline;
+}
