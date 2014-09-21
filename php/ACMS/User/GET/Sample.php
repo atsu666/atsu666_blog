@@ -12,6 +12,8 @@ class ACMS_User_GET_Sample extends ACMS_GET
     {
         $Tpl    = new Template($this->tpl, new ACMS_Corrector());
 
+        // test code
+
         return $Tpl->get();
     }
 }
